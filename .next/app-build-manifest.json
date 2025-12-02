@@ -17,11 +17,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/legal/page.js",
       "static/css/app/legal/page.css"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

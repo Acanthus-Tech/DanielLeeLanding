@@ -97,7 +97,7 @@ const Legal = () => {
           <strong>Contact Information</strong>
           <p>
             If you have any questions or concerns about this policy, please
-            contact us: Email: info@citizens4daniellee.com Phone: (630) 259-6652
+            contact us: <br/>Email: info@citizens4daniellee.com <br/>Phone: (630) 259-6652
           </p>
         </p>
       </div>
