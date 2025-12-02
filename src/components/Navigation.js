@@ -30,7 +30,7 @@ export default function Navigation() {
           <div className={styles.flag}>
             <img src="/images/Flag.svg" />
           </div>
-          <a href="#" className={styles.logoText}>
+          <a href="/" className={styles.logoText}>
             <span className={styles.lee}>LEE</span> for Commissioner
           </a>
         </div>

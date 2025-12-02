@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./Volunteer.module.css";
+import Link from "next/link";
 
 const volunteerOptions = [
   { id: "walk", label: "Walk the Precincts" },
@@ -134,6 +135,22 @@ export default function Volunteer() {
                 ))}
               </div>
             </div>
+            <label className={styles.checkboxLabel}>
+              <input type="checkbox" className={styles.checkbox} />
+              <span>
+                By clicking this checkbox, you are consenting to receive SMS/MMS
+                from Daniel Lee, you agree to receive Campaign Messages.
+                Frequency may vary. Msg & Data Rates may apply. Text STOP to
+                opt-out. Text HELP for help or reach us at
+                INFO@CITIZENS4DANIELLEE.COM, or call at: (630) 259-6652. Read
+                our{" "}
+                <Link href={"/legal"}>
+                  <strong>
+                    Privacy Policy and disclaimer/Terms and conditions here
+                  </strong>
+                </Link>
+              </span>
+            </label>
 
             <button type="submit" className={styles.submitBtn}>
               Submit
