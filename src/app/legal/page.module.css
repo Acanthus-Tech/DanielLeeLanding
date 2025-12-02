@@ -1,0 +1,28 @@
+.container{
+    font-family: 'Playfair Display', serif;
+    padding: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container strong{
+    font-size: 22px;
+}
+
+.container h1{
+    margin: 2rem 0;
+}
+.container p{
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+@media (max-width: 768px) {
+    .container h1,.container p{
+        margin: 1rem 0;
+    }
+    .container{
+        padding: 1rem;
+    }
+}

@@ -32,8 +32,12 @@ export default function Footer() {
                 >
                   Register to Vote
                 </a>
+              </li>{" "}
+              <li>
+                <a href="/legal" className={styles.link}>
+                  Terms and Conditions / Privacy Policy
+                </a>
               </li>
-             
             </ul>
           </div>
 
