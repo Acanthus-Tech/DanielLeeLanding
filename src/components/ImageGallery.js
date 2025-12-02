@@ -1,59 +1,65 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import Image from 'next/image'
-import styles from './ImageGallery.module.css'
+import { useState } from "react";
+import Image from "next/image";
+import styles from "./ImageGallery.module.css";
 
 const galleryItems = [
   {
-    id: 'family',
-    primary: '/images/family.avif',
-    hover: '/images/community.avif',
-    title: 'Family Values',
-    description: 'A devoted husband and father, raising a family with strong values in Cook County for 25 years.'
+    id: "family",
+    primary: "/images/family.avif",
+    hover: "/images/community.avif",
+    title: "Family Values",
+    description:
+      "A devoted husband and father, raising a family with strong values in Cook County for 25 years.",
   },
   {
-    id: 'blue',
-    primary: '/images/blue.avif',
-    hover: '/images/working.avif',
-    title: 'Back the Blue',
-    description: 'Strong supporter of law enforcement and public safety in our communities.'
+    id: "blue",
+    primary: "/images/blue.avif",
+    hover: "/images/working.avif",
+    title: "Back the Blue",
+    description:
+      "Strong supporter of law enforcement and public safety in our communities.",
   },
   {
-    id: 'working',
-    primary: '/images/working.avif',
-    hover: '/images/blue.avif',
-    title: 'Hard Working',
-    description: 'Dedicated to serving the community through tireless effort and commitment.'
+    id: "working",
+    primary: "/images/working.avif",
+    hover: "/images/blue.avif",
+    title: "Hard Working",
+    description:
+      "Dedicated to serving the community through tireless effort and commitment.",
   },
   {
-    id: 'leader',
-    primary: '/images/leader.avif',
-    hover: '/images/candidate.avif',
-    title: 'A Real Leader',
-    description: 'Bringing common sense leadership and conservative values to Cook County.'
+    id: "leader",
+    primary: "/images/leader.avif",
+    hover: "/images/candidate.avif",
+    title: "A Real Leader",
+    description:
+      "Bringing common sense leadership and conservative values to Cook County.",
   },
   {
-    id: 'community',
-    primary: '/images/community.avif',
-    hover: '/images/family.avif',
-    title: 'Community Service',
-    description: 'Serving in Economic Development Commission and Planning & Zoning Commission for Hoffman Estates.'
+    id: "community",
+    primary: "/images/community.avif",
+    hover: "/images/family.avif",
+    title: "Community Service",
+    description:
+      "Serving in Economic Development Commission and Planning & Zoning Commission for Hoffman Estates.",
   },
   {
-    id: 'great',
-    primary: '/images/hero.avif',
-    hover: '/images/leader.avif',
-    title: 'Make Cook County Great Again',
-    description: "It's time to bring conservative values and fiscal responsibility back to Cook County."
-  }
-]
+    id: "great",
+    primary: "/images/hero.avif",
+    hover: "/images/leader.avif",
+    title: "Make Cook County Great Again",
+    description:
+      "It's time to bring conservative values and fiscal responsibility back to Cook County.",
+  },
+];
 
 function GalleryCard({ item }) {
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
+    <div
       className={styles.card}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -63,13 +69,21 @@ function GalleryCard({ item }) {
           src={item.primary}
           alt={item.title}
           fill
-          style={{ objectFit: 'cover', opacity: isHovered ? 0 : 1, transition: 'opacity 0.3s' }}
+          style={{
+            objectFit: "cover",
+            opacity: isHovered ? 0 : 1,
+            transition: "opacity 0.3s",
+          }}
         />
         <Image
           src={item.hover}
           alt={`${item.title} - alternate`}
           fill
-          style={{ objectFit: 'cover', opacity: isHovered ? 1 : 0, transition: 'opacity 0.3s' }}
+          style={{
+            objectFit: "cover",
+            opacity: isHovered ? 1 : 0,
+            transition: "opacity 0.3s",
+          }}
         />
         <div className={styles.cardOverlay}></div>
         <div className={styles.cardContent}>
@@ -77,9 +91,13 @@ function GalleryCard({ item }) {
           <p className={styles.cardDesc}>{item.description}</p>
         </div>
       </div>
-      <div className={`${styles.cardBorder} ${isHovered ? styles.cardBorderActive : ''}`}></div>
+      <div
+        className={`${styles.cardBorder} ${
+          isHovered ? styles.cardBorderActive : ""
+        }`}
+      ></div>
     </div>
-  )
+  );
 }
 
 export default function ImageGallery() {
@@ -89,7 +107,8 @@ export default function ImageGallery() {
         <div className={styles.header}>
           <h2 className={styles.heading}>Meet Daniel Lee</h2>
           <p className={styles.subheading}>
-            A real leader for real people. Hover over each image to learn more about Daniel's commitment to our community.
+            A real leader for real people. Hover over each image to learn more
+            about Daniel's commitment to our community.
           </p>
         </div>
 
@@ -100,5 +119,5 @@ export default function ImageGallery() {
         </div>
       </div>
     </section>
-  )
+  );
 }

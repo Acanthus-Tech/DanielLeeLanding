@@ -1,28 +1,31 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import styles from './YouTube.module.css'
+import { useState } from "react";
+import styles from "./YouTube.module.css";
 
 export default function YouTube() {
-  const [isPlaying, setIsPlaying] = useState(true)
-  const videoId = 'aFHzXYfEme8?si=ecjHxsoefFyfwK91'
+  const [isPlaying, setIsPlaying] = useState(true);
+  const videoId = "aFHzXYfEme8?si=ecjHxsoefFyfwK91";
 
-
-  https://www.citizens4daniellee.com/
-  return (
+  //www.citizens4daniellee.com/
+  https: return (
     <section className={styles.youtube} id="video">
       <div className={styles.container}>
         <div className={styles.header}>
           <p className={styles.label}>WATCH</p>
           <h2 className={styles.heading}>Daniel's Message to You</h2>
           <p className={styles.subheading}>
-            Hear directly from Daniel about his vision for Cook County and why your vote matters.
+            Hear directly from Daniel about his vision for Cook County and why
+            your vote matters.
           </p>
         </div>
 
         <div className={styles.videoWrapper}>
           {!isPlaying ? (
-            <div className={styles.placeholder} onClick={() => setIsPlaying(true)}>
+            <div
+              className={styles.placeholder}
+              onClick={() => setIsPlaying(true)}
+            >
               <div className={styles.playButton}>
                 <span className={styles.playIcon}>▶</span>
               </div>
@@ -43,9 +46,9 @@ export default function YouTube() {
         </div>
 
         <div className={styles.channelLink}>
-          <a 
-            href="https://www.youtube.com/@Citizens4DanielLee" 
-            target="_blank" 
+          <a
+            href="https://www.youtube.com/@Citizens4DanielLee"
+            target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
           >
@@ -54,5 +57,5 @@ export default function YouTube() {
         </div>
       </div>
     </section>
-  )
+  );
 }
