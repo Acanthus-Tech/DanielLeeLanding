@@ -1,0 +1,168 @@
+.about {
+  padding: 4rem 1rem;
+  background-color: var(--off-white);
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 6rem 1rem;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section.reverse .textContent {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .section.reverse .imageContainer {
+    order: 1;
+  }
+  .section.reverse .textContent {
+    order: 2;
+  }
+}
+
+.label {
+  color: var(--navy-blue);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+.text {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: auto;
+}
+
+.decorGold {
+  position: absolute;
+  bottom: -1rem;
+  left: -1rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--gold);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.decorBlue {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--navy-blue);
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.decorLeft {
+  top: -1rem;
+  left: -1rem;
+  right: auto;
+}
+
+.decorRight {
+  bottom: -1rem;
+  right: -1rem;
+  left: auto;
+  top: auto;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .values {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.valueCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid var(--navy-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.valueCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.valueIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.valueTitle {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.valueText {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,162 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+  padding: 0 1rem;
+}
+
+.nav.scrolled {
+  background-color: rgba(10, 35, 81, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.flag {
+  width: 32px;
+  height: 20px;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stripes {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.redStripe {
+  flex: 1;
+  background-color: #bf0a30;
+}
+
+.whiteStripe {
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.union {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 57%;
+  background-color: #002868;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4px;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.logoText {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+.lee {
+  color: var(--gold);
+}
+
+.desktopMenu {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .desktopMenu {
+    display: flex;
+  }
+  .mobileMenuBtn {
+    display: none;
+  }
+}
+
+.navLink {
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: var(--gold);
+}
+
+.donateBtn {
+  background-color: var(--gold);
+  color: var(--navy-blue);
+  font-weight: 700;
+  padding: 0.625rem 1.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.donateBtn:hover {
+  background-color: var(--gold-dark);
+}
+
+.mobileMenuBtn {
+  display: block;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .mobileMenuBtn {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  background-color: rgba(10, 35, 81, 0.95);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobileNavLink {
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  padding: 0.5rem 0;
+}
+
+.mobileDonateBtn {
+  background-color: var(--gold);
+  color: var(--navy-blue);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  width: 100%;
+}

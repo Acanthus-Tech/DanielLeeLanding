@@ -1,0 +1,200 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 35, 81, 0.9),
+    rgba(10, 35, 81, 0.7),
+    transparent
+  );
+}
+
+.flag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 48px;
+  height: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .flag {
+    top: 2rem;
+    left: 2rem;
+    width: 64px;
+    height: 40px;
+  }
+}
+
+.stripes {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.redStripe {
+  flex: 1;
+  background-color: #bf0a30;
+}
+
+.whiteStripe {
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.union {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 57%;
+  background-color: #002868;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px;
+  gap: 1px;
+}
+
+.star {
+  font-size: 4px;
+  color: white;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .star {
+    font-size: 5px;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  width: 100%;
+}
+
+.tagline {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #fcd34d;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 1.875rem;
+  }
+}
+
+.description {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 560px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.donateBtn {
+  background-color: var(--gold);
+  color: var(--navy-blue);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.donateBtn:hover {
+  background-color: var(--gold-dark);
+}
+
+.registerBtn {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.registerBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.verse {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6rem;
+  background: linear-gradient(to top, var(--off-white), transparent);
+}
+@media (max-width: 1300px) {
+  .hero {
+    min-height: 50vh;
+  }
+}

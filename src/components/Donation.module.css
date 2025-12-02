@@ -1,0 +1,200 @@
+.donation {
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--off-white);
+}
+
+@media (min-width: 768px) {
+  .donation {
+    padding: 6rem 1rem;
+  }
+}
+
+.flagBackground {
+  position: absolute;
+  top: 0;
+  right: 0;
+  inset: 0;
+  opacity: 0.1;
+}
+
+.flagBackground img {
+  width: 100%;
+  height: 100%;
+}
+
+.union {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 54%;
+  background-color: #002868;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.star {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.labelWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.heart {
+  font-size: 1.25rem;
+}
+
+.label {
+  color: var(--navy-blue);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+.subheading {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(10, 35, 81, 0.1);
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 3rem;
+  }
+}
+
+.cardIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.cardSubtitle {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.address {
+  background-color: rgba(10, 35, 81, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.pin {
+  font-size: 1.25rem;
+}
+
+.addressText {
+  font-style: normal;
+  text-align: left;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.addressText strong {
+  color: var(--text-dark);
+  font-size: 1.125rem;
+}
+
+.disclaimer {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.donateBtn {
+  display: inline-block;
+  background-color: var(--gold);
+  color: var(--navy-blue);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.donateBtn:hover {
+  background-color: var(--gold-dark);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.stat {
+  padding: 1.5rem;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  margin-bottom: 0.25rem;
+}
+
+.statLabel {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
