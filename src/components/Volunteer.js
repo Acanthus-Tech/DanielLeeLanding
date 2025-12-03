@@ -142,11 +142,11 @@ export default function Volunteer() {
                 from Daniel Lee, you agree to receive Campaign Messages.
                 Frequency may vary. Msg & Data Rates may apply. Text STOP to
                 opt-out. Text HELP for help or reach us at
-                INFO@CITIZENS4DANIELLEE.COM, or call at: (630) 259-6652. Read
-                our{" "}
+                INFO@CITIZENS4DANIELLEE.COM, or call at: (630) 259-6652.
+                {" "}<br/><br/>
                 <Link href={"/legal"}>
                   <strong>
-                    Privacy Policy and disclaimer/Terms and conditions here
+                   Read our privacy policy and disclaimer/terms and conditions here.
                   </strong>
                 </Link>
               </span>
