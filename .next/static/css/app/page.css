@@ -1075,6 +1075,10 @@
   background-color: rgba(10, 35, 81, 0.03);
 }
 
+.Volunteer_volunteer__IU9_j a {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .Volunteer_volunteer__IU9_j {
     padding: 6rem 1rem;

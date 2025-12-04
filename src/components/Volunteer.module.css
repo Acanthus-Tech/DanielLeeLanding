@@ -3,6 +3,10 @@
   background-color: rgba(10, 35, 81, 0.03);
 }
 
+.volunteer a {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .volunteer {
     padding: 6rem 1rem;
