@@ -86,6 +86,16 @@ export default function Footer() {
           <p className={styles.disclaimer}>
             Paid for by Citizens for Daniel Lee.
           </p>
+
+          <a
+            className={styles.disclaimer}
+            href="https://valexity.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered By Valexity Technologies
+          </a>
+
           <a
             href="https://ova.elections.il.gov/"
             target="_blank"
