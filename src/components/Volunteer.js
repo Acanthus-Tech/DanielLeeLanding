@@ -139,8 +139,8 @@ export default function Volunteer() {
               <input type="checkbox" className={styles.checkbox} />
               <span>
                 By clicking this checkbox, you are consenting to receive SMS/MMS
-                from Daniel Lee, you agree to receive Campaign Messages.
-                Frequency may vary. Msg & Data Rates may apply. Text STOP to
+                from Daniel Lee, you agree to receive campaign messages.
+                Frequency may vary. Msg & data rates may apply. Text STOP to
                 opt-out. Text HELP for help or reach us at
                 INFO@CITIZENS4DANIELLEE.COM, or call at: (630) 259-6652.
                 {" "}<br/><br/>
