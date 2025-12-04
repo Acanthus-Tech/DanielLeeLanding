@@ -84,8 +84,7 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <p className={styles.disclaimer}>
-            Paid for by Citizens for Daniel Lee. Not authorized by any candidate
-            or candidate's committee.
+            Paid for by Citizens for Daniel Lee.
           </p>
           <a
             href="https://ova.elections.il.gov/"
