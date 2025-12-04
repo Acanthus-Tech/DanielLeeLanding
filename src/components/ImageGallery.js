@@ -7,7 +7,7 @@ import styles from "./ImageGallery.module.css";
 const galleryItems = [
   {
     id: "family",
-    primary: "/images/family.avif",
+    primary: "/images/family.webp",
     hover: "/images/community.avif",
     title: "Family Values",
     description:
@@ -40,7 +40,7 @@ const galleryItems = [
   {
     id: "community",
     primary: "/images/community.avif",
-    hover: "/images/family.avif",
+    hover: "/images/family.webp",
     title: "Community Service",
     description:
       "Serving in Economic Development Commission and Planning & Zoning Commission for Hoffman Estates.",

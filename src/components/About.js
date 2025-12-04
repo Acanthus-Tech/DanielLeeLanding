@@ -18,7 +18,7 @@ export default function About() {
           </div>
           <div className={styles.imageContainer}>
             <Image
-              src="/images/family.avif"
+              src="/images/family.webp"
               alt="Daniel Lee with his family"
               width={500}
               height={400}
