@@ -207,8 +207,6 @@
   font-family: "Playfair Display", serif;
   padding: 4rem;
   max-width: 1200px;
-  margin-top: 4rem;
-
   margin: 0 auto;
 }
 
@@ -232,6 +230,7 @@
   }
   .page_container__FQ9VB {
     padding: 1rem;
+    margin-top: 4rem;
   }
   .page_container__FQ9VB h1 {
     font-size: 2rem;
