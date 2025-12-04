@@ -7,6 +7,7 @@
 
 .container strong {
   font-size: 22px;
+  color: black;
 }
 
 .container h1 {
@@ -14,8 +15,9 @@
 }
 .container p {
   margin: 1rem 0;
-  letter-spacing: 1px;
   font-size: 19px;
+  font-family: "inter";
+  color: #666666;
 }
 
 @media (max-width: 768px) {
