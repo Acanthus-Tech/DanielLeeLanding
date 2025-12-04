@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Daniel Lee for Cook County Commissioner | Citizens for Daniel Lee",
   description:
-    "Daniel Lee for Cook County Commissioner - God, Family, and Country. A 25-year Cook County resident bringing conservative values and fiscal responsibility to our community.",
+    "Daniel Lee for Cook County Commissioner - God, Family, and Country. A 30-year Cook County resident bringing conservative values and fiscal responsibility to our community.",
   openGraph: {
     title: "Daniel Lee for Cook County Commissioner",
     description:

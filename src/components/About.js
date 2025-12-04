@@ -10,7 +10,7 @@ export default function About() {
             <p className={styles.label}>ABOUT DANIEL</p>
             <h2 className={styles.heading}>God, Family, and Country</h2>
             <p className={styles.text}>
-              Daniel is a 25-year resident of Cook County. With his wife of 24 years, Allyson, they have raised two wonderful children in the community. Their son Danny, Jr. has recently graduated from West Point and was commissioned as a Second Lieutenant in the U.S. Army, and their youngest Anna is in her second year at Illinois State University, studying psychology.
+              Daniel is a 30-year resident of Cook County. With his wife of 24 years, Allyson, they have raised two wonderful children in the community. Their son Danny, Jr. has recently graduated from West Point and was commissioned as a Second Lieutenant in the U.S. Army, and their youngest Anna is in her second year at Illinois State University, studying psychology.
             </p>
             <p className={styles.text}>
               Daniel and Allyson understand the importance of family values and good education for children. As a small business owner, Daniel brings common sense to fiscal responsibility.

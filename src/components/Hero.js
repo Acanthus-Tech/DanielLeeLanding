@@ -29,7 +29,7 @@ export default function Hero() {
         <h1 className={styles.title}>Daniel Lee</h1>
         <p className={styles.subtitle}>God, Family, and Country</p>
         <p className={styles.description}>
-          A 25-year Cook County resident bringing conservative values, fiscal
+          A 30-year Cook County resident bringing conservative values, fiscal
           responsibility, and common sense leadership to our community.
         </p>
 
