@@ -48,7 +48,7 @@ const galleryItems = [
   {
     id: "great",
     primary: "/images/hero.avif",
-    hover: "/images/leader.avif",
+    hover: "/images/withpeople.avif",
     title: "Make Cook County Great Again",
     description:
       "It's time to bring conservative values and fiscal responsibility back to Cook County.",
